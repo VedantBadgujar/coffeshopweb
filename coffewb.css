@@ -244,25 +244,28 @@
 .contact-section {
     text-align: center;
     padding: 40px 20px;
+    background-color:#3e2723 ;
 }
 
 .contact-section h1 {
+    margin-top: 50px;
     font-size: 35px;
-    color: #6F4E37;
+    color: #fff;
 }
 
 .contact-sub {
     margin-top: 10px;
     font-size: 18px;
-    color: #444;
+    color: #fff;
 }
 
 .contact-info {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 80px;
+    padding-bottom: 210px;
 }
 
 .contact-box {
@@ -272,6 +275,7 @@
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     text-align: center;
+    transition:0.5s;
 }
 
 .contact-box i {
@@ -288,4 +292,8 @@
 .contact-box p {
     margin: 5px 0;
     color: #333;
+}
+
+.contact-box:hover{
+  transform: scale(1.10);
 }
