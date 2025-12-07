@@ -10,7 +10,13 @@
     height:40px;
     justify-content:space-between;
    align-items:center;
- 
+   transform: 0.3s;
+}
+.navbar p {
+  transition: 0.5s;
+}
+.navbar p:hover {
+  transform: scale(1.10);
 }
 .home{
   padding-left: 10px;
