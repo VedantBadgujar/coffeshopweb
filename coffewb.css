@@ -238,3 +238,54 @@
     font-size: 1rem;
     margin-top: 10px;
 }
+
+
+/*contact us*/
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-section h1 {
+    font-size: 35px;
+    color: #6F4E37;
+}
+
+.contact-sub {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #444;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contact-box {
+    background: #fff7f0;
+    padding: 25px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact-box i {
+    font-size: 35px;
+    color: #6F4E37;
+    margin-bottom: 10px;
+}
+
+.contact-box h3 {
+    margin: 10px 0 5px;
+    color: #6F4E37;
+}
+
+.contact-box p {
+    margin: 5px 0;
+    color: #333;
+}
