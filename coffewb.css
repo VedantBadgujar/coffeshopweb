@@ -472,7 +472,7 @@
   /* About page */
   .about-full {
     padding: 30px 20px;
-    min-height:100vh;
+    min-height:80vh;
   }
   
   .about-full h1 {
