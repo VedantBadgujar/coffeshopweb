@@ -440,11 +440,13 @@
 
   /* Hero section */
   .heroimage {
+    background-image:url(mobile.heromage.jpg);
     height: 80vh;
     padding: 20px;
   }
   
   .herotext0 {
+    color:#1b1b1b;
     font-size: 5vh;
     padding-top: 100px;
     padding-left: 20px;
@@ -452,6 +454,7 @@
   }
   
   .herotext1 {
+     color:#1b1b1b;
     font-size: 5vh;
     padding-top: 150px;
     padding-left: 30px;
@@ -459,6 +462,7 @@
   }
   
   .heropara {
+     color:#1b1b1b;
     font-size: 2.2vh;
     padding-left: 20px;
     padding-top: 240px;
@@ -604,22 +608,26 @@
 
   /* Hero section - even smaller */
   .heroimage {
+    background-image: url(mobile.heromage.jpg);
     height: 75vh;
   }
   
   .herotext0 {
+     color:#000000;
     font-size: 4vh;
     padding-top: 80px;
     padding-left: 15px;
   }
   
   .herotext1 {
+     color:#000000;
     font-size: 4vh;
     padding-top: 125px;
     padding-left: 20px;
   }
   
   .heropara {
+     color:#000000;
     font-size: 2vh;
     padding-top: 200px;
     padding-left: 15px;
@@ -645,7 +653,7 @@
   }
   
   .herotext0, .herotext1 {
-    color: #FFF8DC;
+    color: #000000;
   }
   
   .heropara {
@@ -653,7 +661,7 @@
   }
   
   .heropara p {
-    color: #FFE4B5;
+    color: #000000;
   }
 
   /* About page */
@@ -761,11 +769,13 @@
   }
   
   .herotext1 {
+    color:#000000;
     font-size: 3.5vh;
     padding-top: 110px;
   }
   
   .heropara {
+    color:#000000;
     font-size: 1.8vh;
     padding-top: 180px;
   }
