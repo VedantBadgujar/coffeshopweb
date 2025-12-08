@@ -318,63 +318,477 @@
 }
 
 
-/* ---------------- MOBILE RESPONSIVE ---------------- */
+@media (max-width: 992px) {
+  
+  /* About page adjustments */
+  .about-full {
+    padding: 40px 30px;
+  }
+  
+  .about-full h1 {
+    font-size: 2.8rem;
+  }
+  
+  .about-full p {
+    font-size: 1.2rem;
+  }
+  
+  .about-full h2 {
+    font-size: 2rem;
+  }
+  
+  .about-full ul li {
+    font-size: 1.2rem;
+  }
+  
+  /* Category cards */
+  .category-section {
+    padding: 40px 20px;
+    height: auto;
+  }
+  
+  .category-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .category-card {
+    width: 220px;
+  }
+  
+  /* Contact page */
+  .contact-info {
+    gap: 20px;
+    margin-top: 50px;
+    padding-bottom: 100px;
+  }
+  
+  .contact-box {
+    width: 220px;
+  }
+}
 
+/* ---------------- MOBILE DEVICES (≤ 768px) ---------------- */
 @media (max-width: 768px) {
   
-  /* Navbar */
+  /* Navbar - Stack vertically or better spacing */
   .navbar {
-      flex-wrap: wrap;
-      justify-content: center;
-      height: auto;
-      padding: 10px 0;
+    flex-direction: column;
+    height: auto;
+    padding: 15px 10px;
+    gap: 10px;
   }
+  
   .navbar p {
-      margin: 5px 10px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .navbar p a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .home, .contact {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  /* Hero text */
+  /* Hero section */
+  .heroimage {
+    height: 80vh;
+    padding: 20px;
+  }
+  
   .herotext0 {
-      font-size: 6vh;
-      padding-top: 120px;
-      padding-left: 20px;
+    font-size: 5vh;
+    padding-top: 100px;
+    padding-left: 20px;
+    width: 90%;
   }
+  
   .herotext1 {
-      font-size: 6vh;
-      padding-top: 180px;
-      padding-left: 40px;
+    font-size: 5vh;
+    padding-top: 150px;
+    padding-left: 30px;
+    width: 90%;
   }
+  
   .heropara {
-      font-size: 2.5vh;
-      padding-left: 20px;
-      padding-top: 260px;
-      max-width: 90%;
+    font-size: 2.2vh;
+    padding-left: 20px;
+    padding-top: 240px;
+    max-width: 90%;
+    line-height: 1.5;
+  }
+  
+  .heropara p {
+    margin: 0;
   }
 
-  /* Footer responsive */
-  .footer-container {
-      flex-direction: column;
-      text-align: center;
-      gap: 25px;
+  /* About page */
+  .about-full {
+    padding: 30px 20px;
   }
+  
+  .about-full h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  
+  .about-full p {
+    font-size: 1.1rem;
+  }
+  
+  .about-full h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .about-full ul {
+    padding-left: 15px;
+  }
+  
+  .about-full ul li {
+    font-size: 1.1rem;
+  }
+  
+  .closing-line {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  /* Category section */
+  .category-section {
+    padding: 30px 15px;
+    height: auto;
+    min-height: auto;
+  }
+  
+  .category-section h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .category-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .category-card {
+    width: 90%;
+    max-width: 350px;
+    padding: 25px;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-card h2 {
+    font-size: 1.6rem;
+  }
+  
+  .category-card p {
+    font-size: 1rem;
+  }
+
+  /* Contact section */
+  .contact-section {
+    padding: 30px 15px;
+  }
+  
+  .contact-section h1 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  
+  .contact-sub {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    gap: 20px;
+  }
+  
+  .contact-box {
+    width: 90%;
+    max-width: 350px;
+    padding: 30px 20px;
+  }
+  
+  .contact-box:hover {
+    transform: scale(1.05);
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 0 15px;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    width: 95%;
+  }
+  
   .footer-container div {
-      width: 100%;
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .footer h3, .footer h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom {
+    font-size: 13px;
+    padding: 15px 10px 0;
   }
 }
 
 /* ---------------- SMALL MOBILE (≤ 576px) ---------------- */
-
 @media (max-width: 576px) {
 
-  /* Hero section */
-  .herotext0 {
-      font-size: 4.5vh;
-      padding-top: 110px;
-      padding-left: 15px;
+  /* Hero section - even smaller */
+  .heroimage {
+    height: 75vh;
   }
+  
+  .herotext0 {
+    font-size: 4vh;
+    padding-top: 80px;
+    padding-left: 15px;
+  }
+  
   .herotext1 {
-      font-size: 4.5vh;
-      padding-top: 160px;
-  }}
+    font-size: 4vh;
+    padding-top: 125px;
+    padding-left: 20px;
+  }
+  
+  .heropara {
+    font-size: 2vh;
+    padding-top: 200px;
+    padding-left: 15px;
+  }
+  
+  /* Disable complex hover effects on mobile */
+  .herotext0:hover, .herotext1:hover {
+    animation: none;
+    transform: scale(1.02);
+  }
+  
+  .heropara:hover {
+    transform: scale(1.02);
+  }
+
+  /* About page */
+  .about-full {
+    padding: 25px 15px;
+  }
+  
+  .about-full h1 {
+    font-size: 1.8rem;
+  }
+  
+  .about-full p {
+    font-size: 1rem;
+  }
+  
+  .about-full h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about-full ul li {
+    font-size: 1rem;
+  }
+  
+  .closing-line {
+    font-size: 1.1rem;
+  }
+
+  /* Category section */
+  .category-section h1 {
+    font-size: 1.7rem;
+  }
+  
+  .category-card {
+    width: 95%;
+    padding: 20px;
+  }
+  
+  .category-card h2 {
+    font-size: 1.4rem;
+  }
+  
+  .category-card p {
+    font-size: 0.95rem;
+  }
+
+  /* Contact section */
+  .contact-section h1 {
+    font-size: 24px;
+  }
+  
+  .contact-sub {
+    font-size: 14px;
+  }
+  
+  .contact-box {
+    width: 95%;
+    padding: 25px 15px;
+  }
+  
+  .contact-box i {
+    font-size: 30px;
+  }
+  
+  .contact-box h3 {
+    font-size: 1.1rem;
+  }
+  
+  .contact-box p {
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 25px 0 10px;
+  }
+  
+  .footer-container {
+    width: 95%;
+  }
+  
+  .footer h3 {
+    font-size: 1.3rem;
+  }
+  
+  .footer h4 {
+    font-size: 1.1rem;
+  }
+  
+  .footer p, .footer-links ul li a {
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+/* ---------------- EXTRA SMALL MOBILE (≤ 400px) ---------------- */
+@media (max-width: 400px) {
+  
+  .herotext0 {
+    font-size: 3.5vh;
+    padding-top: 70px;
+  }
+  
+  .herotext1 {
+    font-size: 3.5vh;
+    padding-top: 110px;
+  }
+  
+  .heropara {
+    font-size: 1.8vh;
+    padding-top: 180px;
+  }
+  
+  .about-full h1 {
+    font-size: 1.5rem;
+  }
+  
+  .category-section h1 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-section h1 {
+    font-size: 20px;
+  }
+}
+
+/* ---------------- LANDSCAPE MODE (Mobile) ---------------- */
+@media (max-width: 900px) and (orientation: landscape) {
+  
+  .heroimage {
+    height: 150vh;
+  }
+  
+  .herotext0 {
+    padding-top: 80px;
+  }
+  
+  .herotext1 {
+    padding-top: 130px;
+  }
+  
+  .heropara {
+    padding-top: 200px;
+  }
+}
+
+/* ---------------- IMPROVE TOUCH TARGETS ---------------- */
+@media (hover: none) and (pointer: coarse) {
+  
+  /* Make clickable areas bigger for touch */
+  .navbar p a {
+    padding: 15px 20px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-links ul li a {
+    padding: 8px 0;
+    display: inline-block;
+  }
+  
+  /* Remove hover effects that don't work on touch */
+  .category-card:hover {
+    transform: none;
+  }
+  
+  .contact-box:hover {
+    transform: none;
+  }
+}
+
+/* ---------------- FIX COMMON MOBILE ISSUES ---------------- */
+
+/* Prevent text selection issues */
+@media (max-width: 768px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Fix font scaling */
+  body {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  /* Prevent horizontal scroll */
+  body, html {
+    overflow-x: hidden;
+  }
+}
 
 
