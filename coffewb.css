@@ -472,6 +472,7 @@
   /* About page */
   .about-full {
     padding: 30px 20px;
+    min-height:100vh;
   }
   
   .about-full h1 {
@@ -504,8 +505,8 @@
   /* Category section */
   .category-section {
     padding: 30px 15px;
-    height: auto;
-    min-height: auto;
+  
+    min-height: 100vh
   }
   
   .category-section h1 {
