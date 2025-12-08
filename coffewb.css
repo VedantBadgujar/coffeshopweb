@@ -317,7 +317,42 @@
   transform: scale(1.10);
 }
 
+/* ===============================================
+   ENHANCED MOBILE RESPONSIVE CSS
+   Add this to the end of your coffewb.css file
+   =============================================== */
 
+/* ---------------- FIX NAVBAR FOR DESKTOP/LAPTOP ---------------- */
+/* This fixes the navbar spacing on larger screens */
+@media (min-width: 769px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 30px;
+  }
+  
+  .navbar p {
+    margin: 0;
+  }
+  
+  .navbar p a {
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  .home {
+    padding-left: 0;
+  }
+  
+  .contact {
+    padding-right: 0;
+  }
+}
+
+/* ---------------- TABLETS & MEDIUM DEVICES (≤ 992px) ---------------- */
 @media (max-width: 992px) {
   
   /* About page adjustments */
@@ -370,24 +405,31 @@
 /* ---------------- MOBILE DEVICES (≤ 768px) ---------------- */
 @media (max-width: 768px) {
   
-  /* Navbar - Stack vertically or better spacing */
+  /* Navbar - Keep horizontal in single line */
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     height: auto;
-    padding: 15px 10px;
-    gap: 10px;
+    padding: 1px 1px;
+    gap: 5px;
+    overflow-x: auto;
   }
   
   .navbar p {
-    margin: 5px 0;
-    width: 100%;
-    text-align: center;
+    margin: 0;
+    flex-shrink: 0;
   }
   
   .navbar p a {
-    display: block;
-    padding: 10px;
-    font-size: 16px;
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  
+  .navbar p a i {
+    margin-right: 3px;
   }
   
   .home, .contact {
@@ -742,7 +784,7 @@
   
   /* Make clickable areas bigger for touch */
   .navbar p a {
-    padding: 15px 20px;
+    padding: 5px 10px;
     min-height: 44px;
     display: flex;
     align-items: center;
@@ -790,5 +832,4 @@
     overflow-x: hidden;
   }
 }
-
 
