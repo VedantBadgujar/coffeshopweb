@@ -412,7 +412,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     height: auto;
-    padding: 1px 1px;
+    padding: 15px 1px;
     gap: 1px;
     overflow-x: auto;
   }
